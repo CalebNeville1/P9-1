@@ -1,5 +1,5 @@
 //P9-1.cpp - Caleb Neville - October 22, 2026
-//
+//Count the amount of characters in a string
 #include <iostream>
 #include <string>
 
@@ -11,10 +11,10 @@ int main(void) {
 
     cout << "Hello, world! " << "= " << countCharacter("Hello, world!") << endl;
     cout << "a b c " << "= " << countCharacter("a b c") << endl;
-    cout << """ "  << "= " <<countCharacter("") << endl;
+    cout << """ " << "= " << countCharacter("") << endl;
     cout << "Pls work " << "= " << countCharacter("Pls work") << endl;
 
-    return 0;
+
 }
 
 
