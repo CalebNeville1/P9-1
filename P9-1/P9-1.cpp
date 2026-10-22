@@ -5,23 +5,26 @@
 
 using namespace std;
 
-int countCharacter(string str);
+int countVowel(string str);
 
 int main(void) {
 
-    cout << "Hello, world! " << "= " << countCharacter("Hello, world!") << endl;
-    cout << "a b c " << "= " << countCharacter("a b c") << endl;
-    cout << """ " << "= " << countCharacter("") << endl;
-    cout << "Pls work " << "= " << countCharacter("Pls work") << endl;
+    cout << "AEIOUaeiou " << "= " << countVowel("AEIOUaeiou") << endl;
+    cout << "This is a test for SHOUTING " << "= " << countVowel("This is a test for SHOUTING") << endl;
+    cout << "qwertyuiopasdfghjklzxcvbnm " << "= " << countVowel("qwertyuiopasdfghjklzxcvbnm") << endl;
+    cout << "shy myrrh " << "= " << countVowel("shy myrrh") << endl;
 
 
 }
 
 
-int countCharacter(string str) {
+int countVowel(string str) {
     int count = 0;
     for (int i = 0; i < str.length(); i++) {
-        count++;
+        char c = str[i];
+        if (c == 'a' || c == 'A' || c == 'e' || c == 'E' || c == 'o' || c == 'O' || c == 'i' || c == 'I' || c == 'u' || c == 'U') {
+            count++;
+        }
     }
     return count;
 }
